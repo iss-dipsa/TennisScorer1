@@ -24,7 +24,17 @@ namespace TennisScorer1
         {
             //Modify this method - use ifs and switches based on the value of a and b
             if (a == 0 && b == 0)
+            {
                 Console.WriteLine("Love all");
+            }
+            else if (a == 0 && b == 1)
+            {
+                Console.WriteLine("Love-15");
+            }
+            else if (a == 0 && b == 2)
+            {
+                Console.WriteLine("Love-30");
+            }
         }
     }
 }
