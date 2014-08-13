@@ -26,8 +26,6 @@ namespace TennisScorer1
             Console.WriteLine("now enter any entry to get the score...");
             program.calculateScore();
             Console.ReadKey();
-
-
         }
 
 
