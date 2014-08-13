@@ -23,7 +23,18 @@ namespace TennisScorer1
         static void DisplayScore(int a, int b)
         {
             //Modify this method - use ifs and switches based on the value of a and b
-            Console.WriteLine("____");
+            if (a == 0 && b == 0)
+            {
+                Console.WriteLine("Love all");
+            }
+            else if (a == 0 && b == 1)
+            {
+                Console.WriteLine("Love-15");
+            }
+            else if (a == 0 && b == 2)
+            {
+                Console.WriteLine("Love-30");
+            }
         }
     }
 }
