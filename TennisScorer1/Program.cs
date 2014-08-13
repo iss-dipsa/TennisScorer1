@@ -7,8 +7,7 @@ namespace TennisScorer1
 {
     class Program
     {
-        
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             for (int scoreA = 0; scoreA <= 5; scoreA++)
             {
@@ -24,31 +23,32 @@ namespace TennisScorer1
         static void DisplayScore(int a, int b)
         {
             //Modify this method - use ifs and switches based on the value of a and b
+           
 
             //implemenation
 
             if (a == 0)
-            switch (b)
-            {
-                case 0:
-                    Console.WriteLine("Love all");
-                    break;
-                case 1:
-                    Console.WriteLine("Love-15");
-                    break;
-                case 2:
-                    Console.WriteLine("Love-30");
-                    break;
-                case 3:
-                    Console.WriteLine("Love-40");
-                    break;
-                case 4:
-                    Console.WriteLine("Game B");
-                    break;
-                case 5:
-                    Console.WriteLine("N/A");
-                    break;                
-            }
+                switch (b)
+                {
+                    case 0:
+                        Console.WriteLine("Love all");
+                        break;
+                    case 1:
+                        Console.WriteLine("Love-15");
+                        break;
+                    case 2:
+                        Console.WriteLine("Love-30");
+                        break;
+                    case 3:
+                        Console.WriteLine("Love-40");
+                        break;
+                    case 4:
+                        Console.WriteLine("Game B");
+                        break;
+                    case 5:
+                        Console.WriteLine("N/A");
+                        break;
+                }
             else if (a == 1)
                 switch (b)
                 {
@@ -162,7 +162,7 @@ namespace TennisScorer1
 
             else
             {
-                 Console.WriteLine("____________");
+                Console.WriteLine("____________");
             }
         }
     }
