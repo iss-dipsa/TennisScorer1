@@ -23,6 +23,51 @@ namespace TennisScorer1
         static void DisplayScore(int a, int b)
         {
             //Modify this method - use ifs and switches based on the value of a and b
+            //Console.WriteLine("____");
+
+            if ((a==b) )
+            {
+                if (a>=3)
+                {
+                    Console.WriteLine("Deuce \n");
+                }
+                if(a==2)
+                {
+                    Console.WriteLine("30 all \n");
+
+                }
+                if(a==1)
+                {
+                    Console.WriteLine("15 all \n");
+                }
+                if(a==0)
+                {
+                    Console.WriteLine("Love all \n");
+                }
+            }
+            if ((a >= 3) || (b >= 3))
+            {
+                if (((a - b) > 2) && (a > b))
+                    Console.WriteLine("Game A");
+                else if ((b - a) > 2 && (b > a))
+                    Console.WriteLine("Game B");
+            }
+
+
+
+            if ((a>3) || (b>3))
+            {
+                if((a>b)&&( (a-b)==1 ))
+                {
+                    Console.WriteLine("Advantage A \n");
+                }
+                else if ((b>a)&&((b-a)==1))
+                {
+                    Console.WriteLine("Advantage B \n");
+                }
+            }
+
+            
             Console.WriteLine("____");
         }
     }
