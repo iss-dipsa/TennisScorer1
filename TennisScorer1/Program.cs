@@ -47,28 +47,34 @@ namespace TennisScorer1
             }
             if ((a >= 3) || (b >= 3))
             {
-                if (((a - b) > 2) && (a > b))
-                    Console.WriteLine("Game A");
-                else if ((b - a) > 2 && (b > a))
-                    Console.WriteLine("Game B");
+                if (((a - b) > 2) && (a > b) &&((a==4) || (b==4)))
+                    Console.WriteLine("Game A \n");
+                else if ((b - a) > 2 && (b > a) && ((a==4) || (b==4)))
+                    Console.WriteLine("Game B \n");
+
+                if (((a == 5) || (b == 5)) && ((Math.Abs(a - b)) >= 3))
+                    Console.WriteLine("N/A \n");
+
+
+                if ((a > 3) || (b > 3))
+                {
+                    if ((a > b) && ((a - b) == 1))
+                    {
+                        Console.WriteLine("Advantage A \n");
+                    }
+                    else if ((b > a) && ((b - a) == 1))
+                    {
+                        Console.WriteLine("Advantage B \n");
+                    }
+                }
             }
 
 
 
-            if ((a>3) || (b>3))
-            {
-                if((a>b)&&( (a-b)==1 ))
-                {
-                    Console.WriteLine("Advantage A \n");
-                }
-                else if ((b>a)&&((b-a)==1))
-                {
-                    Console.WriteLine("Advantage B \n");
-                }
-            }
+      
 
             
-            Console.WriteLine("____");
+          // Console.WriteLine("____");
         }
     }
 }
