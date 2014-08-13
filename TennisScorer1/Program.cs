@@ -18,6 +18,7 @@ namespace TennisScorer1
                 }
             }
             Console.ReadLine();
+
         }
 
         static void DisplayScore(int a, int b)
