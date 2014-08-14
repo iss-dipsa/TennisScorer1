@@ -142,7 +142,7 @@ namespace TennisScorer1
                         dash = "-";
 
 
-                    Console.Write("{0} {1} = {2} {3} {4} {5}\n", totalPoints_1, totalPoints_2, score_1, dash, score_2, score);
+                    Console.Write("{0} {1} = {2}{3}{4}{5}\n", totalPoints_1, totalPoints_2, score_1, dash, score_2, score);
                     score = null;
                     dash = null;
 
